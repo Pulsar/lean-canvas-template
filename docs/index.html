@@ -30,23 +30,25 @@
         'b b g g e e f f a a'
         'h h h h h c c c c c';
       grid-gap: 10px;
+      grid-auto-columns: 1fr;
     }
 
     .grid-container > div {
       border-radius: 5px;
       text-align: left;
       padding: 25px 5px;
+      position: relative;
     }
 
-    .problem                  { grid-area: b; background-color: #7333A3; position: relative; }
-    .solution                 { grid-area: d; background-color: #F69423; position: relative; }
-    .key-metrics              { grid-area: g; background-color: #E96B42; position: relative; }
-    .unique-value-proposition { grid-area: e; background-color: #409847; position: relative; }
-    .unfair-advantage         { grid-area: i; background-color: #89C045; position: relative; }
-    .channels                 { grid-area: f; background-color: #00AA9B; position: relative; }
-    .customer-segments        { grid-area: a; background-color: #0093B7; position: relative; }
-    .cost-structure           { grid-area: h; background-color: #2552B8; position: relative; }
-    .revenue-streams          { grid-area: c; background-color: #0F667B; position: relative; }
+    .problem                  { grid-area: b; background-color: #7333A3; }
+    .solution                 { grid-area: d; background-color: #F69423; }
+    .key-metrics              { grid-area: g; background-color: #E96B42; }
+    .unique-value-proposition { grid-area: e; background-color: #409847; }
+    .unfair-advantage         { grid-area: i; background-color: #89C045; }
+    .channels                 { grid-area: f; background-color: #00AA9B; }
+    .customer-segments        { grid-area: a; background-color: #0093B7; }
+    .cost-structure           { grid-area: h; background-color: #2552B8; }
+    .revenue-streams          { grid-area: c; background-color: #0F667B; }
     /* ******************************* */
     
     .text {

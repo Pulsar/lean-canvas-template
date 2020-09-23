@@ -1,0 +1,20 @@
+{
+  "name": "lean-canvas",
+  "version": "1.0.0",
+  "description": "Lean Model Canvas for ...",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "lean",
+    "model",
+    "canvas"
+  ],
+  "author": "Pulsar",
+  "license": "MIT"
+}

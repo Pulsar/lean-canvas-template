@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+  <style>
+    /* Backround ********************* */
+    html {
+      height: 100%;
+    }
+    body {
+      height: 100%;
+      margin: 0;
+      padding: 10px;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background: linear-gradient(to bottom right, #074d86 0%, #33185f 100%);
+    }
+    /* ******************************* */
+
+    /* Grid Setup ******************** */
+    .grid-container {
+      display: grid;
+      grid-template-areas:
+        'b b d d e e i i a a'
+        'b b g g e e f f a a'
+        'h h h h h c c c c c';
+      grid-gap: 10px;
+    }
+
+    .grid-container > div {
+      border-radius: 5px;
+      text-align: left;
+      padding: 25px 5px;
+    }
+
+    .problem                  { grid-area: b; background-color: #7333A3; position: relative; }
+    .solution                 { grid-area: d; background-color: #F69423; position: relative; }
+    .key-metrics              { grid-area: g; background-color: #E96B42; position: relative; }
+    .unique-value-proposition { grid-area: e; background-color: #409847; position: relative; }
+    .unfair-advantage         { grid-area: i; background-color: #89C045; position: relative; }
+    .channels                 { grid-area: f; background-color: #00AA9B; position: relative; }
+    .customer-segments        { grid-area: a; background-color: #0093B7; position: relative; }
+    .cost-structure           { grid-area: h; background-color: #2552B8; position: relative; }
+    .revenue-streams          { grid-area: c; background-color: #0F667B; position: relative; }
+    /* ******************************* */
+    
+    .text {
+      color: white;
+    }
+
+    .h2, h2 {
+      font-size: 1.3rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      /* margin-left: 4px; */
+    }
+
+    h3 {
+      font-size: 1.1rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-left: 4px;
+    }
+
+    .h2 i, h2 i { vertical-align: top; } /* Fix mssalignment of icons*/
+
+    mat-icon {
+      position: absolute;
+      right: 5px;
+      top  : 5px;
+      /* color: rgba(255, 255, 255, 0.5); */
+    }
+
+  </style>
+</head>
+<body>
+  <h1 class="text">Lean Canvas</h1>
+  <p></p><small class="text">Author: "You"</small></p>
+  <div class="grid-container">
+    
+    <div class="text customer-segments"> <!-- --------------------------- -->
+      <mat-icon class="material-icons">person</mat-icon>
+      <h2>Customer Segments</h2>
+      <!-- List your target customers and users -->
+      <!-- Text Here -->
+
+      <h3>Early Adopters</h3>
+      <!-- List the characteristics of your ideal customers -->
+      <!-- Text Here -->
+
+    </div>
+
+    <div class="text problem"> <!-- ------------------------------------- -->
+      <mat-icon class="material-icons">lock</mat-icon>
+      <h2>Problem</h2>
+      <!-- List your customer's top 3 problems -->
+      <!-- Text Here -->
+
+      <h3></i>Existing Alternatives</h3>
+      <!-- List how these problems are solved today -->
+      <!-- Text Here -->
+
+    </div>
+
+    <div class="text revenue-streams"> <!-- ----------------------------- -->
+      <mat-icon class="material-icons">euro</mat-icon>
+      <h2>Revenue Streams</h2>
+      <!-- List your sources of revenue -->
+      <!-- Text Here  -->
+    </div>
+
+    <div class="text solution"> <!-- ------------------------------------ -->
+      <mat-icon class="material-icons">vpn_key</mat-icon>
+      <h2> Solution</h2>
+      <!-- Outline a possible solution foreach problem -->
+      <!-- Text Here  -->
+
+    </div>
+
+    <div class="text unique-value-proposition"> <!-- -------------------- -->
+      <mat-icon class="material-icons">fingerprint</mat-icon>
+      <h2> Unique Value Proposition</h2>
+      <!-- Single, clear, compelling message that turns an unaware visitor into an interested prospect -->
+      <!-- Text Here  -->
+
+      <h3>High-level Concept</h3>
+      <!-- List your X for Y analogy (e.g. YouTube = Flickr for videos) -->
+      <!-- Text Here  -->
+
+    </div>
+
+    <div class="text channels"> <!-- ------------------------------------ -->
+      <mat-icon class="material-icons">rss_feed</mat-icon>
+      <h2>Channels</h2>
+      <!-- List your Path to Customers -->
+      <!-- Text Here  -->
+
+    </div>
+
+    <div class="text key-metrics"> <!-- --------------------------------- -->
+      <mat-icon class="material-icons">bar_chart</mat-icon>
+      <h2>Key Metrics</h2>
+      <!-- List the key numbers that tell you how your business is doing -->
+      <!-- Text Here  -->
+
+    </div>
+
+    <div class="text cost-structure"> <!-- ------------------------------ -->
+      <mat-icon class="material-icons">account_balance</mat-icon>
+      <h2>Cost Structure</h2>
+      <!-- List your fixed and variable costs -->
+      <!-- Text Here  -->
+
+    </div>
+
+    <div class="text unfair-advantage"> <!-- ---------------------------- -->
+      <mat-icon class="material-icons">star</mat-icon>
+      <h2>Unfair advantage</h2>
+      <!-- Something that can not be easily copied or bought -->
+      <!-- Text Here  -->
+
+    </div>
+
+  </div>
+</body>
+</html>
